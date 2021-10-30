@@ -25,6 +25,8 @@ class UserController {
       expiresIn: "1d",
     });
 
+    delete user.password;
+
     return res.json({
       user,
       token,
